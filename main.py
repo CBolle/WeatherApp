@@ -18,9 +18,13 @@ def main():
     cli.register_command('current', current_weather_command)
     cli.register_command('forecast', forecast_command)
 
+    # Set up the command
+    city = input("Please enter your location: ")
+    command = input("Would you like the current weather or the forecast? (current/forecast): ")
+
+
     # Simulate executing commands
-    print(cli.execute_command('current'))
-    print(cli.execute_command('forecast'))
+    print(cli.execute_command(city, command))
 
 if __name__ == "__main__":
     main()
