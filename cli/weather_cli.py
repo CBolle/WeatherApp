@@ -11,4 +11,4 @@ class WeatherCLI:
         if command_name in self.commands:
             return self.commands[command_name].execute(city)
         else:
-            print(f"Command {command_name} not recognized.")
+            return f"Command {command_name} not recognized."

@@ -19,8 +19,8 @@ def main():
     cli.register_command('overview', overview_command)
 
     # Set up the command
-    city = input("City: ")
-    command = input("Would you like the current weather or the overview? (current/overview): ")
+    city = input("City: ").lower()
+    command = input("Would you like the current weather or the overview? (current/overview): ").lower()
 
 
     # Simulate executing commands
