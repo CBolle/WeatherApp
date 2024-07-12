@@ -1,6 +1,6 @@
 class WeatherService:
-    def get_current_weather(self):
+    def get_location(self):
         pass
 
-    def get_weather_forecast(self):
+    def get_weather(self):
         pass
